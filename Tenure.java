@@ -15,9 +15,9 @@ public class Tenure extends Faculty {
 		return researchArea;
 	}
 
-	public double getRaise(double x, double y) {
-		double raise = x + (y * 0.1);
-		return raise;
+	public double getRaise(double startingSalary, double yearsEmployed) {
+		double raisedSalary = startingSalary + (yearsEmployed * 0.1);
+		return raisedSalary;
 	}
 
 }
