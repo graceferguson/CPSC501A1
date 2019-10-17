@@ -7,10 +7,8 @@ public class Staff {
 		
 	}
 
-	public double calculateTaxes(double salary) {
-		double taxedSalary;
-		taxedSalary = salary - (salary * (0.2));
-		return taxedSalary;
-
+	
+	public String getName(Staff staffmember){
+		return staffName;
 	}
 }

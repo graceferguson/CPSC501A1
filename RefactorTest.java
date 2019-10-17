@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class RefactorTest {
 
-	Department testDepartment = new Department("blank");
+	Department testDepartment = new Department("Test Department");
 	Tenure testTenure = new Tenure("Tony", testDepartment, "Tenure");
 	Adjunct testAdjunct = new Adjunct("Charles", testDepartment, "Adjunct");
 	Staff testStaff = new Staff("Jan");
@@ -28,11 +28,15 @@ public class RefactorTest {
 	@Test
 	public void tenureTest(){
 		assertEquals(testTenure.getName(), "Tony");
+		assertEquals(testTenure.getDepartment(), "Test Department");
+		assertEquals(testTenure.getSection(), "Tenure");
 	}
 	
 	@Test
 	public void adjunctTest(){
 		assertEquals(testAdjunct.getName(), "Charles");
+		assertEquals(testAdjunct.getDepartment(), "Test Department");
+		assertEquals(testAdjunct.getSection(), "Adjunct");
 	}
 	
 	@Test
