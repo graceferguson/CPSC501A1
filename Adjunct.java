@@ -2,8 +2,8 @@
 public class Adjunct extends Faculty {
 	String classes;
 
-	public Adjunct(String name, Department department) {
-		super(name, department);
+	public Adjunct(String name, Department department, String section) {
+		super(name, department, section);
 
 	}
 

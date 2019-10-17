@@ -6,8 +6,8 @@ public class Main {
 		Department art = new Department("Art");
 		Department science = new Department("Science");
 
-		Employee steve = new Employee("Steve", art, "Faculty", "Adjunct");
-		Employee marg = new Employee("Marg", science, "Faculty", "Tenure");
+		Faculty steve = new Faculty("Steve", art, "Adjunct");
+		Faculty marg = new Faculty("Marg", science, "Tenure");
 		Staff pat = new Staff("Pat", null, "Staff", "what");
 
 	}

@@ -1,12 +1,11 @@
 
-public class Staff extends Employee {
+public class Staff {
 	String staffName;
 	Department staffDepartment;
 	String staffSection;
 	String staffSection2;
 
 	public Staff(String name, Department department, String section, String section2) {
-		super(name, department, section, section2);
 		this.staffName = name;
 		this.staffDepartment = department;
 		this.staffSection = section;

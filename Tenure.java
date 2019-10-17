@@ -2,8 +2,8 @@
 public class Tenure extends Faculty {
 	String researchArea;
 
-	public Tenure(String name, Department department) {
-		super(name, department);
+	public Tenure(String name, Department department, String section) {
+		super(name, department, section);
 
 	}
 
@@ -16,7 +16,7 @@ public class Tenure extends Faculty {
 	}
 
 	public double getRaise(double startingSalary, double yearsEmployed) {
-		double raisedSalary = startingSalary + (yearsEmployed * 0.1);
+		double raisedSalary = startingSalary + (startingSalary * (yearsEmployed * 0.1));
 		return raisedSalary;
 	}
 
