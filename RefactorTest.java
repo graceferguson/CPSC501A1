@@ -22,7 +22,9 @@ public class RefactorTest {
 
 	@Test
 	public void raiseTest() {
-		assertEquals(testTenure.getRaise(50000.0, 8.0), 90000, 0.0);
+		testTenure.setSalary(50000);
+		testTenure.setYrsEmployed(8);
+		assertEquals(testTenure.getRaise(), 90000, 0.0);
 	}
 	
 	@Test

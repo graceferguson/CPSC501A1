@@ -1,6 +1,8 @@
 
 public class Tenure extends Faculty {
 	String researchArea;
+	double tenureSalary;
+	double yearsEmployed;
 
 	public Tenure(String name, Department department, String section) {
 		super(name, department, section);
@@ -15,9 +17,27 @@ public class Tenure extends Faculty {
 		return researchArea;
 	}
 
-	public double getRaise(double startingSalary, double yearsEmployed) {
-		double raisedSalary = startingSalary + (startingSalary * (yearsEmployed * 0.1));
-		return raisedSalary;
+	public void setSalary(double salary){
+		this.tenureSalary = salary;
+	}
+	
+	public double getSalary(){
+		return tenureSalary;
+	}
+	
+	public void setYrsEmployed(double years){
+		this.yearsEmployed = years;
+	}
+	
+	public double getYrsEmployed(){
+		return yearsEmployed;
+	}
+	
+	public double getRaise() {
+		return calculateRaise();
 	}
 
+	public double calculateRaise() {
+		return tenureSalary + (tenureSalary * (yearsEmployed * 0.1));
+	}
 }
